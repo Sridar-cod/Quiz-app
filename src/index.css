@@ -1,13 +1,67 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outterContainer{
+  border: 2px solid red;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerQuiz{
+  background-color: rgb(245, 245, 243);
+  min-height: 70vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.start{
+  min-width: 100%;
+  font-size: 1.3rem;
+}
+.question{
+  max-width: 95%;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+}
+.option{
+  min-height: 32vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+h1{
+  font-size: 3rem;
+  color: rgb(108, 108, 108)
+}
+h3{
+  font-size: 1.4rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button{
+  margin-top: .5rem;
+  padding: 10px;
+  min-width: 20vw;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover{
+  font-size: 1.1rem;
+  box-shadow: 1px 2px 3px 2px rgb(202, 202, 202);;
+}
+section{
+  min-height: 18vh;
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
